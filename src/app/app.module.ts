@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
@@ -24,7 +25,6 @@ import { HttpClientModule } from '@angular/common/http';
     ]),
   ],
   declarations: [
-    HttpClientModule,
     AppComponent,
     TopBarComponent,
     ProductListComponent,
